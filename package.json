@@ -1,0 +1,38 @@
+{
+  "name": "pass",
+  "version": "1.0.0",
+  "description": "pass",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "targets": {
+    "main": {
+      "context": "node",
+      "engines": {
+        "node": ">=14 <17"
+      },
+      "includeNodeModules": false
+    }
+  },
+  "scripts": {
+    "build": "npm run test && NODE_ENV=production parcel build src/index.js --dist-dir dist",
+    "format": "prettier --write src",
+    "test": "prettier -c src",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "pass": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "author": "Real Name <myusernamehas25characters@protonmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@jsbits/get-package-version": "^1.0.3",
+    "chalk": "^4.1.2",
+    "enquirer": "^2.3.6",
+    "tauris": "^1.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "prettier": "^2.4.1"
+  }
+}
