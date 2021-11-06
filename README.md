@@ -132,4 +132,4 @@ Here are some of the libraries I used to make my life (and yours) a bit easier w
 - [`chalk`](https://npmjs.com/package/chalk): A super nifty utility that makes it easy to deal with ANSI color codes in the terminal
 - [`enquirer`](https://npmjs.com/package/enquirer): A library with a huge variety of built-in user-friendly interactive prompts like the password prompt or the choice prompt I used in this project
 - [`get-package-version`](https://npmjs.com/package/@jsbits/get-package-version) from JSBits: A utility for getting the current version of a package from `package.json` that handles all kinds of npm `package.json` weirdness
-- [`tauris`](https://npmjs.com/package/tauris): A super-easy and convenient library for parsing CLI arguments and generating help prompts. I use it in almost all of my CLI projects and I think it gets *way* to little credit
+- [`tauris`](https://github.com/codemaster138/tauris): A super-easy and convenient library for parsing CLI arguments and generating help prompts. I use it in almost all of my CLI projects and I think it gets *way* to little credit
