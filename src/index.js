@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import os from 'os';
 
 import { Command } from 'tauris';

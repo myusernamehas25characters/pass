@@ -1,6 +1,6 @@
 {
   "name": "@myusernamehas25characters/pass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "pass",
   "main": "dist/index.js",
   "source": "src/index.js",

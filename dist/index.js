@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var $3PBb8$os = require("os");
 var $3PBb8$tauris = require("tauris");
 var $3PBb8$jsbitsgetpackageversion = require("@jsbits/get-package-version");
