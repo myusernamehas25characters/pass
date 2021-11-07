@@ -9,7 +9,7 @@ Seriously, though, it's mainly a convenience tool for me – As a developer/pow
 You'll need [Node.js](https://nodejs.org) & NPM (which is bundled with nodejs) to run this utility. To install, run the following command in the shell of your choice:
 
 ```bash
-npm install -g pass # Or, if you prefer yarn: yarn global add pass
+npm install -g @myusernamehas25characters/pass # Or, if you prefer yarn: yarn global add @myusernamehas25characters/pass
 ```
 
 Test that pass is properly installed with the following command
