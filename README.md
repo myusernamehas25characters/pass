@@ -1,8 +1,6 @@
 # pass
 
-This is just a utility I whipped up in an afternoon yesterday as an alternative to more common password managers because I have trust issues and can't trust any code I didn't write myself. So, I guess, what's the harm in putting it on GitHub just incase anyone cares?
-
-Seriously, though, it's mainly a convenience tool for me – As a developer/power user I _always_ have a terminal open, and being able to manage my passwords there saves me the hassle of having to have a separate app open all the time, because honestly, copy-pasting a password into a web app once every few hours is really all I need from a password manager. If you _do_ have trust issues like I do, however, you can read through the [Implementation details](#implementation-details) and I also encourage you to take a look at the code (Most of the interesting stuff happens in [`src/cryptography.js`](blob/master/src/cryptography.js))!
+As a developer/power user I _always_ have a terminal open, and being able to manage my passwords there saves me the hassle of having to have a separate app open all the time, because honestly, copy-pasting a password into a web app once every few hours is really all I need from a password manager. If you want to know more about how it works (and assure yourself of its security), you can read through the [Implementation details](#implementation-details) and I also encourage you to take a look at the code (Most of the interesting stuff happens in [`src/cryptography.js`](blob/master/src/cryptography.js))!
 
 ## Installation
 
@@ -55,6 +53,8 @@ The command will prompt you for a master password. This password will be require
 
 Example: `pass init`
 
+![animation showing pass init command](assets/init.svg)
+
 ### `pass generate`
 
 Usage: `pass generate <service> [<keyword>]`
@@ -67,6 +67,8 @@ The option `keyword` defaults to `"*"` when no value is specified.
 
 Example: `pass generate reddit myusername`
 
+![animation showing pass generate command](assets/generate.svg)
+
 ### `pass view`
 
 Usage: `pass view <service> [<keyword>]`
@@ -76,6 +78,8 @@ This command will print the specified password to standard output. Its two param
 If no value is specified for `keyword`, a prompt listing available keywords will be displayed.
 
 Example: `pass view reddit myusername` or `pass view reddit`
+
+![animation showing pass view command](assets/view.svg)
 
 ### `pass remove`
 
@@ -88,6 +92,8 @@ If no value is specified for `keyword`, a prompt listing available keywords will
 > **Important Notice:** The password will be delted _permanently_ from your passfile and _cannot be accessed again_ after it has been removed.
 
 Example: `pass remove reddit myusername` or `pass remove reddit`
+
+![animation showing pass remove command](assets/remove.svg)
 
 ### `pass store`
 
